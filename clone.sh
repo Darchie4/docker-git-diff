@@ -4,4 +4,4 @@ FROM=$2
 TO=$3
 mkdir repo && cd repo
 git clone $URL . --quiet
-git diff $FROM $TO --compact-summary
+git diff $FROM $TO --compact-summary | cat
